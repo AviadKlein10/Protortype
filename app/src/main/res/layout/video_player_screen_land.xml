@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/screen_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+
+    <RelativeLayout
+        android:id="@+id/video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6">
+
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/player_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            app:use_controller="false"
+            app:shutter_background_color="#ffffff"/>
+
+        <ImageView
+            android:id="@+id/big_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="100dp"
+            android:src="@drawable/play_blue"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar_video"
+            style="?android:attr/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+
+
+
+    <LinearLayout
+        android:id="@+id/btns_layouot"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:background="#48111111">
+
+
+       <RelativeLayout
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:orientation="horizontal"
+           android:layout_weight="0.3333">
+           <CheckBox
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentBottom="true"
+               android:layout_alignParentLeft="true"
+               android:gravity="center"
+               android:text="AutoStop"
+               android:buttonTint="@color/bg_color"
+               android:textColor="@color/bg_color"
+               android:id="@+id/check_box"
+               android:checked="true"/>
+       </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3333" >
+
+        <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="@dimen/large_btn"
+                android:layout_height="@dimen/large_btn"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:rotation="180"
+                android:src="@drawable/next" />
+
+            <aviad.ikea.PlayPauseView
+                android:id="@+id/play_pause_view_large"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:clickable="true"
+                android:foreground="?android:selectableItemBackground" />
+
+            <ImageView
+                android:id="@+id/next_btn"
+                android:layout_width="@dimen/large_btn"
+                android:layout_height="@dimen/large_btn"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/back_btn"
+                android:src="@drawable/next" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="0.3333"
+            android:padding="10dp">
+
+        <ImageView
+                android:layout_width="@dimen/small_btn"
+                android:layout_height="@dimen/small_btn"
+                android:baselineAlignBottom="true"
+                android:src="@drawable/icon_skip"
+                android:id="@+id/skip_btn"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_above="@+id/btns_layouot"
+            android:id="@+id/layout_hide"
+            android:orientation="horizontal"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="large_btn">48dp</dimen>
+    <dimen name="medium">38dp</dimen>
+    <dimen name="small_btn">28dp</dimen>
+    <dimen name="pause_bar_width">12dp</dimen>
+    <dimen name="pause_bar_distance">10dp</dimen>
+    <dimen name="pause_bar_height">36dp</dimen>
+</resources>

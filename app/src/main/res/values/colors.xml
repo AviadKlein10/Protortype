@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fdd835</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bg_color">#013197</color>
+    <color name="yellow">#fdd835</color>
+    <color name="pause_color">#fdd835</color>
+    <color name="play_color">#fdd835</color>
+    <color name="play_color2">#5e538f</color>
+    <color name="next_color">#FF4081</color>
+    <color name="next_color2">#3083c9</color>
+    <color name="fill_color">#1565c0</color>
+    <color name="tourquisee">#00ff9800</color>
+    <color name="konf_1">#96da38</color>
+    <color name="konf_2">#75e7f9</color>
+    <color name="konf_3">#e91e63</color>
+</resources>
